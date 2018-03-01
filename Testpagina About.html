@@ -70,29 +70,99 @@ h2 {
 color: tomato
 }
 
-h2.heading{color : green}
+h1{color : #9bb8e8}
+p{color : white}
+p1{text-indent: 50px;}
+div1 {background-color : #0a1f42}
+div2 {background-color : rgb(119, 0, 255) }
+/**************     Drop down menu       *********************************/
+/* Dropdown Button */
+.dropbtn {
+    background-color: #0a1f42; /* #4CAF50 */
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
 
-div {background-color : rgb(119, 0, 255) }
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4e62b2; /*#f1f1f1 */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #0a1f42;/*#9bb8e8*/ /* #3e8341 */
+}
+/********************************************************************************************/
 
 
 </Style>
 </head>
 
-<body>
+<body bgcolor="#0a1f42">
+<div1>
+<div2>
 <h1> About </h1>
+</div2>
 
-<h1> Wie ben ik? </h1>
+<div class="dropdown">
+<button class="dropbtn"><img src="iconfinder-icon.svg"</button>
+  <div class="dropdown-content">
+    <a href="#C1">Wie ben ik?</a>
+    <a href="#C2">Persona Grid</a>
+    <a href="#C3">Business model You</a>
+    <a href="#C4">HelloWorld</a>
+  </div>
+</div>
+
+<h1 id="C1"> Wie ben ik? </h1>
   <p> Ik ben Luuk Geurts, 3e jaars mechatronica student aan de Fontys Hogeschool Engineering Eindhoven. Ik volg momenteel de minor Smart Industry aan de Han in Arnhem. Ik hoop bij deze minor mijn technische kennis aan te kunnen vullen met bedrijfskundige kennis zodat ik later een sterke positie in de arbeidsmarkt heb.
   </p>
 
-<h1> Persona Grid</h1>
+<h1 id="C2"> Persona Grid</h1>
   <p>Dit is mijn Persona Grid.</p>
   <img src="PersonaGrid.JPG" width="30%">
-<h1> Business model YOU </h1>
-  <p>Dit business model beschrijft hoe ik als persoon in een bedrijf werk. Zo komt u iets meer te weten over mij.</p>
+  
+<h1 id="C3"> Business model YOU </h1>
+  <p>Dit business model beschrijft hoe ik als persoon in een bedrijf werk. Zo komt u iets meer te weten over mij als werknemer.</p>
   <img src="BusinessModelYou.jpg" width="70%">
-<h1> HelloWorld video </h1>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mXWHoNffUVs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<h1 id="C4"> HelloWorld video </h1>
+<p> Hallo Wereld, hieronder is mijn HelloWorld video te zien waarin ik de volgende antwoorden ga beantwoorden. </p>
+<br>
+<p> - Waarom vind ik het onderwerp Smart Industry boeiend? </p> 
+<p> - Wat wil ik met het onderwerp gaan doen? </P> 
+<p> - Over welke kennis en vaardigheden beschik ik al en op welke vlakken ga ik me verder ontwikkelen? </p>
+<p> - Welke partners heb ik nodig en hoe krijg ik die? </p>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mXWHoNffUVs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div1>
 </body>
 </html>
